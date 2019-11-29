@@ -10,11 +10,11 @@
       
         <h2>Calculadora</h2>
 
-        <input type="text" id="valor1" value=" ">
+        <input type="text" id="valor1" value="">
         
-        <input type="text" id="valor2" value=" ">
+        <input type="text" id="valor2" value="">
         
-        <input type="text" id="operador" value=" ">
+        <input type="text" id="operador" value="">
 
         <button onclick="calculadora()">Calcular</button>
         
@@ -22,7 +22,7 @@
         
         <script>
        
-        function calculadora(operador, valor1, valor2) { 
+        function calculadora() { 
             let resultado;
             var valor1 = parseInt(document.getElementById("valor1").value);
             var valor2 = parseInt(document.getElementById("valor2").value);
