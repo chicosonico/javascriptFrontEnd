@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+
+<p>Reemplaça la paraula blau per verd</p>
+
+<p id="print1">Tinc un cotxe de color blau.</p>
+
+<button onclick="paraula()">Comença</button>
+
+<br>
+
+<p>Reemplaça les lletres o per u</p>
+
+<p id="print2">Tinc un cotxe de color blau.</p>
+
+<button onclick="lletres()">Comença</button>
+
+
+<script>
+function paraula() {
+  var str = document.getElementById("print1").innerHTML; 
+  var res = str.replace("blau", "verd"); // reemplaza una palabra por otra del array
+  document.getElementById("print1").innerHTML = res;
+}
+
+function lletres() {
+  var str = document.getElementById("print2").innerHTML; 
+  var res = str.replace(/o/g, "u"); // reemplaza todas las por otra del array
+  document.getElementById("print2").innerHTML = res;
+}
+
+  
+</script>
+    
+
+</body>
+</html>
